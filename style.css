@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  background: rgb(236, 236, 236);
+}
+
+.header-top {
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav-home {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(rgba(70, 70, 70, 0.801), rgba(70, 70, 70, 0));
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.nav-home a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-family: "the-seasons", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header-top img {
+  z-index: -1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width:100%;
+  align-self: baseline;
+}
+@media (max-width: 850px) {
+    .header-top img {
+        z-index: -1;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        width: auto;
+        height: 100%;
+        align-self: baseline;
+      }
+}
+
+.header-top div {
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  justify-items: center;
+}
+
+.header-top p {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.header-top h1 {
+  margin: 0;
+  font-family: the-seasons, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.header-top h2 {
+    color: rgb(25, 25, 25);
+    margin: 0;
+    font-family: the-seasons, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .text-location{
+    display: grid;
+    margin: 30px;
+    height: 70vh;
+    grid-template-columns: 40% 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: the-seasons, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .text-location img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+
+    width: 100%;
+  }
+
+  .text-location h2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .text-location p{
+    grid-column: 2/4;
+    grid-row: 2/3;
+  } 
+  .text-location a{
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+  }
+
+.asist-home{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.asist-home img{
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.asist-home .txt-img-conf{
+    z-index: 2;
+    font-family: the-seasons, sans-serif;
+    font-weight: 300;
+    font-style: italic; 
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.txt-img-conf a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-family: the-seasons, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: gray;
+}
+
+footer{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(90, 89, 89);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.art-hotel{
+    display: grid;
+    height: 300px;
+    padding: 60px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: the-seasons, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    gap: 20px;
+}
+
+.art-hotel h2{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    font-family: the-seasons, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.art-hotel header{
+    font-family: the-seasons, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form{
+    display: flex;
+    font-family: the-seasons, sans-serif;
+    font-weight: 300;
+    padding: 100px;
+    flex-direction: column;
+}
+
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button, input{
+    font-family: the-seasons, sans-serif;
+    font-weight: 300;
+}
