@@ -84,9 +84,10 @@ body {
 .header-top h2 {
     color: rgb(255, 255, 255);
     margin: 0;
-    font-family: the-seasons, sans-serif;
-    font-weight: 300;
-    font-style: italic;
+    font-family: "bickham-script-pro-3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
 
@@ -95,6 +96,7 @@ body {
     font-weight: 200;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
+
   .text-location{
     display: grid;
     margin: 30px;
@@ -128,7 +130,6 @@ body {
   } 
   .text-location a{
     text-decoration: none;
-    color: rgb(83, 83, 83);
   }
 
 .asist-home{
@@ -198,16 +199,19 @@ a:hover{
 
 .art-hotel{
     display: grid;
-    height: 300px;
     padding: 60px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr;
     justify-items: center;
     align-items: center;
     font-family: the-seasons, sans-serif;
     font-weight: 300;
     font-style: normal;
     gap: 20px;
+    grid-template-areas: 
+    "h h h h"
+    "a a b b"
+    ". c c .";
 }
 
 .art-hotel h2{
@@ -216,11 +220,35 @@ a:hover{
     font-family: the-seasons, sans-serif;
     font-weight: 700;
     font-style: normal;
+    grid-area: h;
 }
 
 .art-hotel header{
     font-family: the-seasons, sans-serif;
     font-weight: 400;
+    font-style: normal;
+}
+
+.ga-a{
+  grid-area: a;
+}
+
+.ga-b{
+  grid-area: b;
+}
+
+.ga-c{
+  grid-area: c;
+}
+
+.num-tel{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: the-seasons, sans-serif;
+    font-weight: 300;
     font-style: normal;
 }
 
