@@ -31,12 +31,14 @@ body {
 .nav-home a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  padding: 10px;
   font-family: "the-seasons", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
+.nav-home ul {
+  padding: 0;
+}
 
 
 .header-top img {
@@ -99,8 +101,7 @@ body {
 
   .text-location{
     display: grid;
-    margin: 30px;
-    height: 70vh;
+    margin: 10px;
     grid-template-columns: 40% 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     font-family: the-seasons, sans-serif;
@@ -269,3 +270,53 @@ button, input{
     font-family: the-seasons, sans-serif;
     font-weight: 300;
 }
+
+.nivel2-detalles{
+  display: grid;
+  width: 100%;
+  font-family: the-seasons, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+  grid-template-areas: 
+  "dc ub"
+  "mr mr";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 150px;
+
+  justify-items: center;
+  text-align: center;
+}
+
+
+.nivel2-detalles .mrg{
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.ubicacion-detalles{
+  grid-area: ub;
+  z-index: 2;
+}
+
+.codigodevestimenta-detalles{
+  grid-area: dc;
+  z-index: 2;
+}
+
+.mesaderegalos-detalles{
+  margin-top: 50px;
+  grid-area: mr;
+  z-index: 2;
+}
+
+.txt-detalles{
+  margin: 40px;
+  font-family: the-seasons, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+
+}
+
