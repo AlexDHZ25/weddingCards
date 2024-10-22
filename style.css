@@ -37,7 +37,7 @@ body {
 }
 
 .nav-home ul {
-  padding: 10px;
+  padding: 0;
 }
 
 
@@ -320,3 +320,10 @@ button, input{
 
 }
 
+.audio-controls{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
